@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+        	    <Button 
+    	android:id="@+id/button2"
+    	android:layout_marginTop="5dp"
+    	android:text="Start FM"
+    	android:textColor="#000000"
+    	android:textSize="15sp"
+    	android:layout_width="fill_parent"
+    	android:layout_height="60dp" />
+    
+     <Button 
+     	android:visibility="gone"
+    	android:id="@+id/button1"
+    	android:text="tune 105.4"
+    	android:textColor="#000000"
+    	android:textSize="15sp"
+    	android:layout_width="60dp"
+    	android:layout_height="60dp" />
+    
+     	<LinearLayout 
+    android:orientation="horizontal"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="120dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    >
+   <RelativeLayout
+   android:layout_width="wrap_content"
+   android:layout_height="120dp"
+   android:gravity="center_vertical|center_horizontal">
+   
+    	
+    	    	    <EditText 
+    	android:id="@+id/first"
+    	android:inputType="number"
+    	android:maxLength="3"
+    	android:hint="105"
+    	android:textColor="#000000"
+    	android:textSize="60sp"
+    	android:layout_width="150dp"
+    	android:layout_height="120dp" />
+    	    	    	    <TextView 
+    	android:id="@+id/dot"
+    	android:text="."
+    	android:textColor="#ffffff"
+    	android:maxLength="2"
+    	android:textSize="60sp"
+    	android:textStyle="bold"
+    	 android:gravity="center_vertical|center_horizontal"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_toRightOf="@id/first" />
+    	
+    	    	    	    <EditText 
+    	android:id="@+id/second"
+    	android:inputType="number"
+    	android:hint="4"
+    	android:textColor="#000000"
+    	android:textSize="60sp"
+    	android:layout_width="80dp"
+    	android:layout_height="120dp"
+    	android:layout_toRightOf="@id/dot" />
+    	
+		</RelativeLayout>
+    	
+    	</LinearLayout>
+    	    	    	    <Button 
+    	android:id="@+id/button5"
+    	android:layout_gravity="center_vertical"
+    	android:text="Tune"
+    	android:textColor="#000000"
+    	android:textSize="15sp"
+    	android:layout_width="fill_parent"
+    	android:layout_height="60dp" />
+
+    	
+    	    <Button 
+		android:id="@+id/button3"
+    	android:text="Stop FM"
+    	android:textColor="#000000"
+    	android:textSize="15sp"
+    	android:layout_width="fill_parent"
+    	android:layout_height="60dp"  />
+    	
+    	    	    <EditText
+    	android:visibility="gone" 
+    	android:id="@+id/editer"
+    	android:inputType="number"
+    	android:hint="FREQ HERE"
+    	android:textColor="#000000"
+    	android:textSize="15sp"
+    	android:layout_width="fill_parent"
+    	android:layout_height="80dp" />
+    	
+    	    	    <Button 
+    	android:visibility="gone" 
+    	android:id="@+id/button4"
+    	android:gravity="center"
+    	android:text="GO CUSTOM"
+    	android:textColor="#ffffff"
+    	android:textSize="15sp"
+    	android:layout_width="60dp"
+    	android:layout_height="80dp" />
+</LinearLayout>
