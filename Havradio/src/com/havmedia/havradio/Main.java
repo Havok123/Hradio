@@ -152,7 +152,7 @@ public class Main extends Activity {
 		    	
 		    	// FirstI 
 		    int firstI = Integer.parseInt(firstIR);
-		    if (firstI < 100){ t = 10000; }
+		    if (firstI < 87){ t = 10000; } // prevent script issue
 		    		    
 		    int secondI = Integer.parseInt(secondIR);
   		    if (secondI > 9){ t2 = 10;}
@@ -229,6 +229,7 @@ public class Main extends Activity {
 
 
 class letsradio extends Main{
+	
 	public int FREQ;
 	
 	
@@ -237,7 +238,8 @@ class letsradio extends Main{
 	public letsradio(){
 		FREQ = 105400;
 	}
-		public letsradio(int FREQR){
+	
+	public letsradio(int FREQR){
 		FREQ = FREQR;
 		}
 		
