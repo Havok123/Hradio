@@ -162,7 +162,7 @@ public class Main extends Activity {
 		    result = firstI + secondI;
 		    
 		    
-		    	if(result < 875000 || firstIR == "" || secondIR == ""){result = 105400;}
+		    	//if(result < 87500 || firstIR == "" || secondIR == ""){result = 105400;}
 		    	
 				yeah = new letsradio(result);
 				
